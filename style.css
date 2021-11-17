@@ -12,160 +12,94 @@
     align-items: center;
 
     font-family: "Kumbh Sans";
+
+    background-color: var(--dark-cyan);
+    background-image: url("./images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+    background-position: bottom 500px right 180px, top 450px left 200px;
+    background-repeat: no-repeat;
+    background-size: 500px;
+}
+.card{
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.cover {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
-/*Mobile*/
+.photo {
+    border-radius: 50%;
+    border: 6px solid white;
+    margin-top: -55px;
+}
 
-@media only screen and (max-width: 375px){
-    :root{
-        background-color: var(--dark-cyan);
-        background-image: url("./images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
-        background-position: bottom 500px right 180px, top 450px left 200px;
-        background-repeat: no-repeat;
-        background-size: 500px;
-    }
-    .card{
-        max-width: 300px;
-        display: flex;
-        flex-direction: column;
-    }
-	.cover {
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-    }
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+.personal{
+    margin-top: 25px;
+}
+.name{
+    display: inline;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 5px;
+}
+.age {
+    color: var(--dark-gray)
+}
+.city{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: var(--dark-gray);
+}
+.row{
+    border-top: 1px solid rgb(189, 189, 189);
+}
+.information{
+    display: flex;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    justify-content: space-around;
+}
+.info-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+}
 
-    .photo {
-        border-radius: 50%;
-        border: 6px solid white;
-        margin-top: -55px;
-    }
+.numbers{
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
 
-    .content{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: white;
-    }
-    .personal{
-        margin-top: 25px;
-    }
-    .name{
-        font-weight: bold;
-        font-size: 18px;
-        margin-right: 5px;
-    }
-    .age {
-        color: var(--dark-gray)
-    }
-    .city{
-        margin-top: 10px;
-        margin-bottom: 30px;
-        color: var(--dark-gray);
-    }
-    .row{
-        border-top: 1px solid rgb(189, 189, 189);
-    }
-    .information{
-        display: flex;
-        background-color: white;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-        justify-content: space-around;
-    }
-    .info-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 25px;
-    }
-
-    .numbers{
-        font-size: 18px;
-        font-weight: 900;
-        margin-bottom: 5px;
-    }
-
-    .description{
-        color:var(--dark-gray);
-        font-size: 11px;
-        letter-spacing: 2px;
-    }
-
+.description{
+    color:var(--dark-gray);
+    font-size: 11px;
+    letter-spacing: 2px;
 }
 
 @media only screen and (min-width: 375px){
     :root{
-        background-color: var(--dark-cyan);
-        background-image: url("./images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
         background-position: bottom 250px right 600px, top 400px left 500px;
-        background-repeat: no-repeat;
         background-size: 1000px;
     }
     .card{
         min-width: 380px;
-        display: flex;
-        flex-direction: column;
-        background-color: grey;
-        border-radius: 20px;
-    }
-	.cover {
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-    }
-
-    .photo {
-        border-radius: 50%;
-        border: 6px solid white;
-        margin-top: -55px;
     }
 
     .content{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: white;
         padding: 0px 100px 0px 100px;
     }
-    .personal{
-        margin-top: 25px;
+    .row{
+        border-top: 1px solid hsl(0, 0%, 85%);
     }
-    .name{
-        font-weight: bold;
-        font-size: 18px;
-        margin-right: 5px;
-    }
-    .age {
-        color: var(--dark-gray)
-    }
-    .city{
-        margin-top: 10px;
-        margin-bottom: 30px;
-        color: var(--dark-gray);
-    }
-    .information{
-        display: flex;
-        background-color: white;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-        justify-content: space-around;
-    }
-    .info-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 25px;
-    }
-
-    .numbers{
-        font-size: 18px;
-        font-weight: 900;
-        margin-bottom: 5px;
-    }
-
-    .description{
-        color:var(--dark-gray);
-        font-size: 11px;
-        letter-spacing: 2px;
-    }
-
 }
